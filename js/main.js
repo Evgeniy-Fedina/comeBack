@@ -2,7 +2,7 @@ $(document).ready(function(){
     $('.portfolio-slider__items').owlCarousel({
         margin:10,
         nav:true,
-        navText: ["<img src='../images/arrow-left.svg'>","<img src='../images/arrow-right.svg'>"],
+        navText: ["<img src='./images/arrow-left.svg'>","<img src='./images/arrow-right.svg'>"],
         URLhashListener:true,
         startPosition: 'URLHash',
         responsive:{
@@ -22,7 +22,7 @@ $(document).ready(function(){
     $('.comments-slider__items').owlCarousel({
         margin:10,
         nav:true,
-        navText: ["<img src='../images/arrow-left.svg'>","<img src='../images/arrow-right.svg'>"],
+        navText: ["<img src='./images/arrow-left.svg'>","<img src='./images/arrow-right.svg'>"],
         responsive:{
             0:{
                 items:1
