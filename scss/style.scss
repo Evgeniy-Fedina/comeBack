@@ -577,36 +577,26 @@
         text-align: center;
     }
 
-    .owl-prev {
-        width: 12px;
-        height: 24px;
-        outline: transparent;
-        position: absolute;
-        left: 25%;
-        bottom: 0;
-        transform: translate(-25%, -25%);
-        svg{
-            stroke: red;
-        }
-        &.disabled{
-            span{
-                color: #ccc;
-            }
-        }
-    }
+    .owl-prev,
     .owl-next{
         width: 12px;
         height: 24px;
         outline: transparent;
         position: absolute;
-        right: 25%;
         bottom: 0;
         transform: translate(-25%, -25%);
-        &.disabled{
-            span{
-                color: #ccc;
-            }
+        svg path{
+            stroke: $mainColor;
         }
+        &.disabled svg path{
+            stroke: #ccc;
+        }
+    }
+    .owl-prev {
+        left: 25%;
+    }
+    .owl-next{
+        right: 25%;
     }
     .owl-dots{
         text-align: center;
@@ -631,9 +621,7 @@
 
 }
 
-.owl-prev svg{
-    stroke: red;
-}
+
 
 .feedback{
     height: 403px;

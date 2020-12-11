@@ -1395,38 +1395,33 @@ input[type=number] {
   text-align: center;
 }
 
-.comments-slider .owl-prev {
-  width: 12px;
-  height: 24px;
-  outline: transparent;
-  position: absolute;
-  left: 25%;
-  bottom: 0;
-  -webkit-transform: translate(-25%, -25%);
-          transform: translate(-25%, -25%);
-}
-
-.comments-slider .owl-prev svg {
-  stroke: red;
-}
-
-.comments-slider .owl-prev.disabled span {
-  color: #ccc;
-}
-
+.comments-slider .owl-prev,
 .comments-slider .owl-next {
   width: 12px;
   height: 24px;
   outline: transparent;
   position: absolute;
-  right: 25%;
   bottom: 0;
   -webkit-transform: translate(-25%, -25%);
           transform: translate(-25%, -25%);
 }
 
-.comments-slider .owl-next.disabled span {
-  color: #ccc;
+.comments-slider .owl-prev svg path,
+.comments-slider .owl-next svg path {
+  stroke: #FF9900;
+}
+
+.comments-slider .owl-prev.disabled svg path,
+.comments-slider .owl-next.disabled svg path {
+  stroke: #ccc;
+}
+
+.comments-slider .owl-prev {
+  left: 25%;
+}
+
+.comments-slider .owl-next {
+  right: 25%;
 }
 
 .comments-slider .owl-dots {
@@ -1451,10 +1446,6 @@ input[type=number] {
   padding: 4.5px;
   border-radius: 50%;
   background-color: #FF9900;
-}
-
-.owl-prev svg {
-  stroke: red;
 }
 
 .feedback {
