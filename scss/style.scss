@@ -451,35 +451,22 @@
         height: 94px;
         background: $mainColor;
     }
-
     .owl-prev {
-        width: 12px;
-        height: 24px;
-        outline: transparent;
-        position: absolute;
         right: 148px;
-        bottom: 25%;
-        -webkit-transform: translate(-25%, -25%);
-        transform: translate(-50%, -50%);
-        &.disabled{
-            span{
-                color: #ccc;
-            }
-        }
     }
+    .owl-next{
+        right: 77px;
+    }
+    .owl-prev,
     .owl-next{
         width: 12px;
         height: 24px;
         outline: transparent;
         position: absolute;
-        right: 77px;
         bottom: 25%;
-        -webkit-transform: translate(-25%, -25%);
         transform: translate(-50%, -50%);
-        &.disabled{
-            span{
-                color: #ccc;
-            }
+        &.disabled svg path{
+            stroke: rgba(255, 255, 255, 0.45);
         }
     }
     .owl-dots{
