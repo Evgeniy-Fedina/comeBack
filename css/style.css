@@ -2299,3 +2299,68 @@ input[type=email] {
     padding: 16px 0 16px 10px;
   }
 }
+
+@media (max-width: 375px) {
+  .header-main {
+    margin-top: 0px;
+  }
+  .header-main__title {
+    font-size: 23px;
+    line-height: 28px;
+  }
+  .header-main__desc {
+    width: 100%;
+    padding: 45px 5px;
+  }
+  .stages-work__sup-title {
+    padding: 25px 10px 15px;
+    text-align: center;
+  }
+  .stages-work__title {
+    line-height: 32px;
+    text-align: center;
+    padding: 0px 10px;
+  }
+  .points-list {
+    padding-left: 0;
+    padding-bottom: 25px;
+  }
+  .point-text {
+    width: 100%;
+  }
+  .portfolio-slider__img-nav {
+    display: none;
+  }
+  .owl-item .portfolio-slider__item-images img {
+    max-width: 100%;
+  }
+  .portfolio-slider__items .owl-dots {
+    right: 35%;
+  }
+  .comments {
+    height: 100%;
+  }
+  .comments__title {
+    line-height: 35px;
+    margin: 0;
+    font-size: 28px;
+  }
+  .owl-carousel .owl-item img {
+    display: none;
+  }
+  .comments-slider .owl-nav {
+    margin-top: 0;
+  }
+  .comments-slider .owl-dots {
+    padding: 25px;
+  }
+  .feedback {
+    height: 100%;
+  }
+  .feedback__title {
+    padding: 15px 0 0;
+  }
+  .feedback-forma {
+    padding-bottom: 25px;
+  }
+}
