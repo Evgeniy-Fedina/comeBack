@@ -2255,6 +2255,17 @@ input[type=email] {
     padding: 0;
     margin-right: 75px;
   }
+  .header-main {
+    margin-top: 0px;
+  }
+  .header-main__title {
+    font-size: 23px;
+    line-height: 28px;
+  }
+  .header-main__desc {
+    width: 100%;
+    padding: 45px 5px;
+  }
   .menu-btn--button {
     display: none;
   }
@@ -2296,22 +2307,14 @@ input[type=email] {
     margin: 0 0 5px;
   }
   .footer-bottom {
-    padding: 16px 0 16px 10px;
+    padding: 15px;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
   }
 }
 
-@media (max-width: 375px) {
-  .header-main {
-    margin-top: 0px;
-  }
-  .header-main__title {
-    font-size: 23px;
-    line-height: 28px;
-  }
-  .header-main__desc {
-    width: 100%;
-    padding: 45px 5px;
-  }
+@media (max-width: 320px) {
   .stages-work__sup-title {
     padding: 25px 10px 15px;
     text-align: center;
@@ -2345,9 +2348,6 @@ input[type=email] {
     margin: 0;
     font-size: 28px;
   }
-  .owl-carousel .owl-item img {
-    display: none;
-  }
   .comments-slider .owl-nav {
     margin-top: 0;
   }
@@ -2362,5 +2362,44 @@ input[type=email] {
   }
   .feedback-forma {
     padding-bottom: 25px;
+  }
+  .footer-top {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer-top__col {
+    width: 100%;
+  }
+  .footer-menu__list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .footer-menu__list-item + .footer-menu__list-item {
+    margin-top: 0;
+  }
+  .footer-top__social-item + .footer-top__social-item {
+    margin-top: 0;
+  }
+  .footer-top__col-local {
+    text-align: center;
+  }
+  .footer-top__social {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 0 30px;
   }
 }
