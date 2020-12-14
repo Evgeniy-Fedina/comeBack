@@ -175,7 +175,7 @@
         height: 100px;
     }
     .comments-slider__item-text {
-        width: 525px;
+        width: 100%;
         padding: 15px;
     }
     .comments-slider .owl-nav {
@@ -290,11 +290,14 @@
         align-items: center;
     }
     .menu__list li {
-        margin: 0px 0px 10px;
+        margin: 0;
         width: 100%;
         padding: 10px;
         font-size: 14px;
         border-bottom: 1px solid #fff;
+        &:last-child{
+            border-bottom: none;
+        }
     }
     .header-main {
         text-align: center;
@@ -390,10 +393,6 @@
         background: rgba(0, 0, 0, 0.3);
         backdrop-filter: none;
     }
-    .comments-slider__item-text {
-        width: 412px;
-    }
-
     .feedback-inner {
         width: 100%;
         margin: 0 auto;
@@ -409,6 +408,15 @@
 }
 
 @media (max-width: 425px)  {
+    .header {
+        height: 75vh;
+    }
+    .header-main__title {
+        font-size: 25px;
+        line-height: 36px;
+        margin: 0 auto;
+        width: 100%;
+    }
     .about {
         padding: 5px 15px;
     }
@@ -431,11 +439,65 @@
         }
     }
     .comments {
-        height: 85vh;
+        height: 75vh;
+        &__sup-title {
+            padding: 35px 0px 10px;
+        }
+        &__title {
+            line-height: 40px;
+            margin: 0 auto 30px;
+            width: 100%;
+        }
     }
     .comments-slider{
         .owl-nav button{
             display: none;
         }
+    }
+}
+
+@media (max-width: 375px) {
+    a.header__logo {
+        padding: 0;
+        margin-right: 75px;
+    }
+    .menu-btn--button{
+        display: none;
+    }
+    .menu-btn--ico{
+        display: block;
+        border-radius: 50%;
+        padding: 8px 10px 4px 10px;
+        .fa-phone{
+            color: $mainColor;
+            width: 30px;
+            transition: all .3s;
+        }
+        &:hover .fa-phone{
+             color: #fff;
+             transition: all .3s;
+        }
+    }
+    .portfolio-slider__img-nav {
+        right: -12px;
+    }
+    .owl-item .portfolio-slider__img-nav img {
+        max-width: 85%;
+    }
+    
+    .feedback-forma {
+        flex-direction: column;
+    }
+    .input-elem {
+        width: 100%;
+    }
+    .feedback-forma__btn {
+        margin-top: 25px;
+    }
+    .footer-top__address {
+        margin: 0 0 5px;
+    }
+    .footer-bottom {
+        padding: 16px 0 16px 10px;
     }
 }
