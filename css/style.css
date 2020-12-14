@@ -2212,9 +2212,6 @@ input[type=email] {
 }
 
 @media (max-width: 425px) {
-  .header {
-    height: 75vh;
-  }
   .header-main__title {
     font-size: 25px;
     line-height: 36px;
@@ -2239,9 +2236,6 @@ input[type=email] {
   }
   .owl-item .portfolio-slider__item-images img {
     max-width: 75%;
-  }
-  .comments {
-    height: 75vh;
   }
   .comments__sup-title {
     padding: 35px 0px 10px;

@@ -408,9 +408,6 @@
 }
 
 @media (max-width: 425px)  {
-    .header {
-        height: 75vh;
-    }
     .header-main__title {
         font-size: 25px;
         line-height: 36px;
@@ -439,7 +436,6 @@
         }
     }
     .comments {
-        height: 75vh;
         &__sup-title {
             padding: 35px 0px 10px;
         }
